@@ -96,6 +96,24 @@ public class basicMaths {
 
         return false;
     }
+
+    public static int GreatestCommonDivisor(int a, int b){
+        //Using Eucledian Algorithm
+
+        while(a>0 && b>0){
+            if(a>b){
+                a = a % b;
+            } else {
+                b = b % a;
+            }
+        }
+
+        if(a == 0){
+            return b;
+        } else {
+            return a;
+        }
+    }
     public static void main(String[] args){
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
 
@@ -111,5 +129,6 @@ public class basicMaths {
         printAllDivisors(36);
 
         System.out.println("\nPrime or not?: "+ isPrime(3));
+        System.out.println("\nGreatest Common Divisor of the given no.s is: "+GreatestCommonDivisor(22, 4));
     }
 }
