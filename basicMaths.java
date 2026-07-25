@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class basicMaths {
     public static int countDigitsofNum(int num){
@@ -52,11 +53,48 @@ public class basicMaths {
     }
 
     public static void printAllDivisors(int num){
+        //Brute force 
         for(int i=1; i<=num; i++){
             if(num % i == 0){
                 System.out.print(i+" ");
             }
         }
+
+        System.out.println();
+
+        //improved Time complexity O(sqrt(N)) + O(no.of.factors * (log(no.of.factors)))
+        ArrayList<Integer> li = new ArrayList<>();
+         for(int i=1; i*i<=num; i++){
+            if(num % i == 0){
+                li.add(i);
+                if((num/i) != i){
+                    li.add(num/i);
+                }
+            }
+        }
+
+        Collections.sort(li);
+
+        System.out.println(li);
+
+    }
+
+    public static boolean isPrime(int num){
+        int cnt = 0;
+        for(int i=1; i*i <= num; i++){
+            if(num % i == 0){
+                cnt++;
+                if((num/i) != i){
+                    cnt++;
+                }
+            }
+        }
+
+        if(cnt == 2){
+            return true;
+        }
+
+        return false;
     }
     public static void main(String[] args){
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
@@ -71,5 +109,7 @@ public class basicMaths {
 
         System.out.println("Printing all the Divisors: ");
         printAllDivisors(36);
+
+        System.out.println("\nPrime or not?: "+ isPrime(3));
     }
 }
