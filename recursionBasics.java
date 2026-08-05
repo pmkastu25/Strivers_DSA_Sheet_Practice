@@ -62,6 +62,14 @@ class recursionBasics{
         }
         return isPalindrome(st, idx-1, revSt.append(st.charAt(idx)));
     }
+
+    public static int fib(int n){
+        if(n == 0 || n == 1){
+            return n;
+        }
+        
+        return  fib(n-1)+fib(n-2);
+    }
     public static void main(String[] args){
         System.out.println("\nPrinting numbers N to 1: ");
         printNumbers(10);
@@ -91,5 +99,7 @@ class recursionBasics{
         String st1 = "soap";
         System.out.println(st+" is Palindrome or not?: "+ isPalindrome(st, st.length()-1, new StringBuilder("")));
         System.out.println(st1+ " is Palindrome or not?: "+ isPalindrome(st1, st1.length()-1, new StringBuilder("")));
+
+        System.out.println("\nFibonacci of number is: "+ fib(5));
     }
 }
