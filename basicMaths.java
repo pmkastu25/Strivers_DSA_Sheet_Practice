@@ -115,6 +115,7 @@ public class basicMaths {
         }
     }
     public static void main(String[] args){
+        System.out.println("------------------------BASIC MATHS-----------------------------")
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
 
         System.out.println("Reverse of a Number: "+reverseNumber(125467));
