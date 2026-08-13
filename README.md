@@ -43,6 +43,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Bubble Sort
 
+- Selection Sort
+
 ## Arrays - Easy
 
 - Largest Element
