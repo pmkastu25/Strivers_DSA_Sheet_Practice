@@ -21,7 +21,7 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 ## Basic Recursion
 
-- print something N times
+- Print something N times
 
 - Print name N times using recursion
 
