@@ -9,12 +9,18 @@ public class sorting1 {
         int n = arr.length;
 
         for(int i=0; i<n; i++){
+            int didSwap = 0;
             for(int j=0; j<n-i-1; j++){
                 if(arr[j] > arr[j+1]){
                     int temp = arr[j+1];
                     arr[j+1] = arr[j];
                     arr[j] = temp;
+
+                    didSwap = 1;
                 }
+            }
+            if(didSwap == 0){
+                break;
             }
         }
     }
@@ -35,6 +41,21 @@ public class sorting1 {
         }
     }
 
+    public static void insertionSort(int arr[]){
+        int n = arr.length;
+
+        for(int i=0; i<n; i++){
+            int j = i;
+            while(j > 0 && arr[j-1] > arr[j]){
+               int temp = arr[j-1];
+               arr[j-1] = arr[j];
+               arr[j] = temp;
+               
+               j--;
+            }
+        }
+    }
+
     public static void main(String[] args){
         int arr[] = {2,7,5,6};
         bubbleSort(arr);
@@ -45,5 +66,11 @@ public class sorting1 {
         int arr1[] = {3,1,7,4};
         selectionSort(arr1);
         printArr(arr1);
+
+         System.out.println();
+
+        int arr2[] = {5, 4, 3, 2, 1};
+        insertionSort(arr2);
+        printArr(arr2);
     }
 }
