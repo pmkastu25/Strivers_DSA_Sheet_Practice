@@ -45,6 +45,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Selection Sort
 
+- Insertion Sort
+
 ## Arrays - Easy
 
 - Largest Element
