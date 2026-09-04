@@ -52,3 +52,5 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 - Largest Element
 	
 - Second Largest Element
+
+- Check if the Array is Sorted II 
