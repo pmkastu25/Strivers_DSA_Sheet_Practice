@@ -14,8 +14,20 @@ class arraysEasy{
         return max2;
     }
 
+    public static boolean isSortedArr(int arr[]){
+        for(int i=0; i<arr.length-1; i++){
+            if(arr[i] > arr[i+1]){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
+
+        System.out.println(isSortedArr(arr));
     }
 }
