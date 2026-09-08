@@ -54,3 +54,5 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 - Second Largest Element
 
 - Check if the Array is Sorted II 
+
+- Remove duplicates from sorted array

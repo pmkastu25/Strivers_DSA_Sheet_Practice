@@ -1,3 +1,5 @@
+import java.util.*;
+
 class arraysEasy{
     public static int getSecondLargest(int arr[]){
         int max1 = Integer.MIN_VALUE;
@@ -24,10 +26,23 @@ class arraysEasy{
         return true;
     }
 
+     public static HashSet<Integer> removeDuplicates(int arr[]){
+        HashSet<Integer> hs = new HashSet<>();
+
+        for(int i=0; i<arr.length; i++){
+            hs.add(arr[i]);
+        }
+
+        return hs;
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
 
         System.out.println(isSortedArr(arr));
+
+         int arr1[] = {1,4,4,7,8,8};
+         System.out.println(removeDuplicates(arr1));
     }
 }
