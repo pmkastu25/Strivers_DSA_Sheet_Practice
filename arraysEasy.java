@@ -44,6 +44,25 @@ class arraysEasy{
         arr[arr.length-1] = temp;
     }
 
+    public static void rotateArrLeftByK(int arr[], int k){
+    for(int j=0; j<k; j++){
+       int temp = arr[0];
+        for(int i=0; i<arr.length-1; i++){
+            arr[i] = arr[i+1];
+        }
+        arr[arr.length-1] = temp;
+      }
+    }
+
+    public static void moveAllZerosToEnd(int arr[]){
+        int end = arr.length;
+        while(end >= 0){
+            while(end == 0){
+                end--;
+            }
+        }
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -54,6 +73,13 @@ class arraysEasy{
          System.out.println(removeDuplicates(arr1));
 
         rotateArrLeft(arr1);
+        for(int i=0; i<arr1.length; i++){
+            System.out.print(arr1[i] + " ");
+        }
+
+        System.out.println();
+
+         rotateArrLeftByK(arr1, 2);
         for(int i=0; i<arr1.length; i++){
             System.out.print(arr1[i] + " ");
         }
