@@ -36,6 +36,14 @@ class arraysEasy{
         return hs;
     }
 
+    public static void rotateArrLeft(int arr[]){
+       int temp = arr[0];
+        for(int i=0; i<arr.length-1; i++){
+            arr[i] = arr[i+1];
+        }
+        arr[arr.length-1] = temp;
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -44,5 +52,10 @@ class arraysEasy{
 
          int arr1[] = {1,4,4,7,8,8};
          System.out.println(removeDuplicates(arr1));
+
+        rotateArrLeft(arr1);
+        for(int i=0; i<arr1.length; i++){
+            System.out.print(arr1[i] + " ");
+        }
     }
 }
