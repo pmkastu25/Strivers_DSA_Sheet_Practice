@@ -56,3 +56,7 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 - Check if the Array is Sorted II 
 
 - Remove duplicates from sorted array
+
+- Left Rotate Array by one
+
+- Left Rotate Array by k
