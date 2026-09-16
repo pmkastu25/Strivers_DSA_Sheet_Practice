@@ -63,6 +63,23 @@ class arraysEasy{
         }
     }
 
+    public static HashSet<Integer> hs = new HashSet<>();
+
+    public static void unionOfTwoSortedArrs(int arr1[], int arr2[]){
+        int i = 0;
+        int j = 0;
+        while(i < arr1.length && j < arr2.length-1){
+            if(i != arr1.length-1){
+                hs.add(arr1[i]);
+                i++;
+            }
+            if(j != arr2.length-1){
+                hs.add(arr2[i]);
+                j++;
+            }
+        }
+    }
+    
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -83,5 +100,13 @@ class arraysEasy{
         for(int i=0; i<arr1.length; i++){
             System.out.print(arr1[i] + " ");
         }
+
+        System.out.println();
+        
+        int un1[] = {1,2,2,3,4};
+        int un2[] = {3,4,4,5,6};
+        unionOfTwoSortedArrs(un1, un2);
+
+        System.out.println(hs);
     }
 }
