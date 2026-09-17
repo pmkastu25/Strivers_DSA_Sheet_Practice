@@ -62,3 +62,5 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 - Left Rotate Array by k
 
 - Union of Two Sorted Arrays
+
+- Count Maximum Consecutive One's in the array
