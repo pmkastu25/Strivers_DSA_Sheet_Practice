@@ -63,4 +63,6 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Union of Two Sorted Arrays
 
+- Find missing number
+
 - Count Maximum Consecutive One's in the array

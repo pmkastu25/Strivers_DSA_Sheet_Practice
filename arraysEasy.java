@@ -100,6 +100,21 @@ class arraysEasy{
 
         return maxOnes;
     }
+
+    public static int missingNumber(int arr[]){
+        int n = arr.length;
+
+        Arrays.sort(arr);
+        int num = 1;
+        for(int i=0; i<n; i++){
+            if(arr[i] != num){
+                return num;
+            }
+            num++;
+        }
+
+        return -1;
+    }
     
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
@@ -132,5 +147,8 @@ class arraysEasy{
 
         int cons[] = {1,0,1,1,1,1,0,1,1};
         System.out.println(CountMaximumConsecutiveOne(cons));
+
+        int findMis[] = {8, 2, 4, 5, 3, 7, 1};
+        System.out.println(missingNumber(findMis));
     }
 }
