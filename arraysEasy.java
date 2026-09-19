@@ -116,6 +116,28 @@ class arraysEasy{
         return -1;
     }
     
+    public static int numAppearOnce(int arr[]){
+        int maxEl = Integer.MIN_VALUE;
+
+         for(int i=0; i<arr.length; i++){
+           maxEl = Math.max(maxEl, arr[i]);
+        }
+
+        int freq[] = new int[maxEl+1];
+
+        for(int i=0; i<maxEl; i++){
+            freq[arr[i]]++;
+        }
+
+        for(int i=0; i<freq.length; i++){
+            if(freq[arr[i]] == 1){
+                return arr[i];
+            }
+        }
+
+        return -1; //no such element
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -150,5 +172,8 @@ class arraysEasy{
 
         int findMis[] = {8, 2, 4, 5, 3, 7, 1};
         System.out.println(missingNumber(findMis));
+
+        int arr3[] = {4,1,2,1,2};
+        System.out.println(numAppearOnce(arr3) + " is the element that appears once.");
     }
 }
