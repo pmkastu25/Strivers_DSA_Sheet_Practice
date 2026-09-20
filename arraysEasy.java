@@ -54,15 +54,6 @@ class arraysEasy{
       }
     }
 
-    public static void moveAllZerosToEnd(int arr[]){
-        int end = arr.length;
-        while(end >= 0){
-            while(end == 0){
-                end--;
-            }
-        }
-    }
-
     public static TreeSet<Integer> hs = new TreeSet<>();
 
     public static void unionOfTwoSortedArrs(int arr1[], int arr2[]){
@@ -138,6 +129,24 @@ class arraysEasy{
         return -1; //no such element
     }
 
+    public static void moveZerosToEnd(int arr[]){
+        for(int i=arr.length-1; i>=0; i--){
+            if(arr[i] == 0){
+                int j = i;
+                while(j < arr.length-1 && arr[j+1] != 0){
+                    arr[j] = arr[j+1];
+                    j++;
+                }
+                arr[j] = 0;
+            }
+        }
+    }
+
+    public static void printArr(int arr[]){
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i] + " ");
+        }
+    }
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -148,16 +157,12 @@ class arraysEasy{
          System.out.println(removeDuplicates(arr1));
 
         rotateArrLeft(arr1);
-        for(int i=0; i<arr1.length; i++){
-            System.out.print(arr1[i] + " ");
-        }
+        printArr(arr1);
 
         System.out.println();
 
          rotateArrLeftByK(arr1, 2);
-        for(int i=0; i<arr1.length; i++){
-            System.out.print(arr1[i] + " ");
-        }
+       printArr(arr1);
 
         System.out.println();
 
@@ -175,5 +180,10 @@ class arraysEasy{
 
         int arr3[] = {4,1,2,1,2};
         System.out.println(numAppearOnce(arr3) + " is the element that appears once.");
+
+        int arrZ[] = { 1,2,0,1,0,4,0};
+        moveZerosToEnd(arrZ);
+        printArr(arrZ);
+
     }
 }
