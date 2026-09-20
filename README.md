@@ -59,10 +59,14 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Left Rotate Array by one
 
-- Left Rotate Array by k
+- Left Rotate Array by k places
+
+- Move Zeros to End
 
 - Union of Two Sorted Arrays
 
 - Find missing number
 
 - Count Maximum Consecutive One's in the array
+
+- Find the number that appears once, and other numbers twice.
