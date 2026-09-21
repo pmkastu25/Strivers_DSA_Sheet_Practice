@@ -142,6 +142,26 @@ class arraysEasy{
         }
     }
 
+    public static ArrayList<Integer> intersectionOfTwoSortedArrs(ArrayList<Integer> arr1, ArrayList<Integer> arr2){
+        ArrayList<Integer> newl = new ArrayList<>();
+        int p1 = 0;
+        int p2 = 0;
+
+        while(p1 < arr1.size() && p2 < arr2.size()){
+            if(arr1.get(p1) == arr2.get(p2)){
+                newl.add(arr1.get(p1));
+                p1++;
+                p2++;
+            } else if(arr1.get(p1) < arr2.get(p2)){
+                p1++;
+            } else {
+                p2++;
+            }
+        }
+
+        return newl;
+    }
+
     public static void printArr(int arr[]){
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
@@ -185,5 +205,25 @@ class arraysEasy{
         moveZerosToEnd(arrZ);
         printArr(arrZ);
 
+         System.out.println();
+
+        ArrayList<Integer> l1 = new ArrayList<>();
+        l1.add(1);
+        l1.add(2);
+        l1.add(2);
+        l1.add(3);
+        l1.add(3);
+        l1.add(3);
+
+
+        ArrayList<Integer> l2 = new ArrayList<>();
+        l2.add(2);
+        l2.add(3);
+        l2.add(3);
+        l2.add(4);
+        l2.add(5);
+        l2.add(7);
+
+        System.out.println(intersectionOfTwoSortedArrs(l1, l2));
     }
 }
