@@ -73,3 +73,6 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Find the number that appears once, and other numbers twice.
 
+## Binary Search - Easy
+
+- Search X in sorted array
