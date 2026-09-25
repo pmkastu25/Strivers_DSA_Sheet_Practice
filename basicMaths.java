@@ -114,8 +114,22 @@ public class basicMaths {
             return a;
         }
     }
+
+    public static int countOddDigitsInANumber(int num){
+        int count = 0;
+
+        while(num != 0){
+            int ld = num % 10;
+            if(ld % 2 == 1){
+                count++;
+            }
+            num /= 10;
+        }
+
+        return count;
+    }
     public static void main(String[] args){
-        System.out.println("------------------------BASIC MATHS-----------------------------")
+        System.out.println("------------------------BASIC MATHS-----------------------------");
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
 
         System.out.println("Reverse of a Number: "+reverseNumber(125467));
@@ -131,5 +145,7 @@ public class basicMaths {
 
         System.out.println("\nPrime or not?: "+ isPrime(3));
         System.out.println("\nGreatest Common Divisor of the given no.s is: "+GreatestCommonDivisor(22, 4));
+
+        System.out.println("Count Odd Digits In a Number: "+countOddDigitsInANumber(25));
     }
 }
