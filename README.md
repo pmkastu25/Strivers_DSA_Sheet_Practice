@@ -23,6 +23,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 	
 - Check for Prime Number
 
+- Count of Prime Numbers till N
+
 ## Basic Recursion
 
 - Print something N times
