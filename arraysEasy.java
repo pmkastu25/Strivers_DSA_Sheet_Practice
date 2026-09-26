@@ -162,6 +162,15 @@ class arraysEasy{
         return newl;
     }
 
+    public static int sum(int arr[], int n) {
+        int sum = 0;
+        for(int i=0; i<n; i++){
+            sum += arr[i];
+        }
+
+        return sum;
+    }
+
     public static void printArr(int arr[]){
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
@@ -225,5 +234,8 @@ class arraysEasy{
         l2.add(7);
 
         System.out.println(intersectionOfTwoSortedArrs(l1, l2));
+
+        int ar[] = {1,2,3,4,5};
+        System.out.println(sum(ar, ar.length));
     }
 }
