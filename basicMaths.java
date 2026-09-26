@@ -128,6 +128,17 @@ public class basicMaths {
 
         return count;
     }
+
+    public static int returnLargestDigit(int num){
+        int maxDig = Integer.MIN_VALUE;
+        while(num != 0){
+            int ld = num % 10;
+            maxDig = Math.max(maxDig, ld);
+            num /= 10;
+        }
+
+        return maxDig;
+    }
     public static void main(String[] args){
         System.out.println("------------------------BASIC MATHS-----------------------------");
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
@@ -147,5 +158,7 @@ public class basicMaths {
         System.out.println("\nGreatest Common Divisor of the given no.s is: "+GreatestCommonDivisor(22, 4));
 
         System.out.println("Count Odd Digits In a Number: "+countOddDigitsInANumber(25));
+
+        System.out.println("The Largest Digit in a Number: "+ returnLargestDigit(31964));
     }
 }
