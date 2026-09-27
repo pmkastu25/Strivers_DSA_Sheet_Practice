@@ -6,10 +6,14 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 ## Basic Maths
 
 - Count all Digits of a Number
+
+- Count Odd Digits In a Number
 	
 - Reverse a number
 	
 - Palindrome Number
+
+- Return the Largest Digit in a Number
 
 - GCD of Two Numbers
 	
