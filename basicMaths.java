@@ -157,6 +157,17 @@ public class basicMaths {
 
         return false;
     }
+
+    public static int countOfPrimeNumbers(int num){
+        int count = 0;
+        for(int i=1; i<=num; i++){
+            if(isPrime(i)){
+                count++;
+            }
+        }
+
+        return count;
+    }
     public static void main(String[] args){
         System.out.println("------------------------BASIC MATHS-----------------------------");
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
@@ -180,5 +191,7 @@ public class basicMaths {
         System.out.println("The Largest Digit in a Number: "+ returnLargestDigit(31964));
 
         System.out.println("is Perfect Number: " + perfectNumber(6));
+
+        System.out.println("Count of Prime Numbers: "+ countOfPrimeNumbers(10));
     }
 }
