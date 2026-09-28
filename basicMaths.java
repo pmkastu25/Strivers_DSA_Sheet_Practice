@@ -139,6 +139,21 @@ public class basicMaths {
 
         return maxDig;
     }
+
+    public static boolean perfectNumber(int num){
+        int sum = 0;
+        for(int i=1; i<num; i++){
+            if(num % i == 0){
+                sum += i;
+            }
+        }
+        
+        if(sum == num){
+            return true;
+        }
+
+        return false;
+    }
     public static void main(String[] args){
         System.out.println("------------------------BASIC MATHS-----------------------------");
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
@@ -160,5 +175,7 @@ public class basicMaths {
         System.out.println("Count Odd Digits In a Number: "+countOddDigitsInANumber(25));
 
         System.out.println("The Largest Digit in a Number: "+ returnLargestDigit(31964));
+
+        System.out.println("is Perfect Number: " + perfectNumber(6));
     }
 }
