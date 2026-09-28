@@ -130,6 +130,9 @@ public class basicMaths {
     }
 
     public static int returnLargestDigit(int num){
+         if(num == 0){
+            return 0;
+        }
         int maxDig = Integer.MIN_VALUE;
         while(num != 0){
             int ld = num % 10;
