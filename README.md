@@ -25,6 +25,10 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Count of Prime Numbers till N
 
+## Basic Arrays
+
+- Sum of Array Elements
+
 ## Basic Recursion
 
 - Print something N times
