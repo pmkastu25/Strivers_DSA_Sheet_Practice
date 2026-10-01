@@ -171,6 +171,18 @@ class arraysEasy{
         return sum;
     }
 
+    public static int countOdd(int[] arr, int n) {
+
+        int oddCnt = 0;
+       for(int i=0; i<n; i++){
+            if(arr[i] % 2 == 1){
+                oddCnt++;
+            }
+       }
+
+       return oddCnt;
+    }
+
     public static void printArr(int arr[]){
         for(int i=0; i<arr.length; i++){
             System.out.print(arr[i] + " ");
@@ -237,5 +249,7 @@ class arraysEasy{
 
         int ar[] = {1,2,3,4,5};
         System.out.println(sum(ar, ar.length));
+
+        System.out.println(countOdd(ar, ar.length));
     }
 }

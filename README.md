@@ -29,6 +29,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Sum of Array Elements
 
+- Count of odd numbers in Array
+
 ## Basic Recursion
 
 - Print something N times
