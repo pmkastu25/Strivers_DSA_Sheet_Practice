@@ -1,13 +1,13 @@
 import java.util.*;
 
 class stringsBasic{
-    public static List<Character> reverseString(List<Character> s) {
-        List<Character> revS = new ArrayList<>();
+    public static void reverseString(List<Character> s) {
         for(int i=s.size()-1; i>=0; i--){
-            revS.add(s.get(i));
+            s.add(s.get(i));
+            s.remove(s.get(i));
         }
 
-        return revS;
+        System.out.println(s);
     }
 
     public static void main(String[] args){
@@ -18,6 +18,6 @@ class stringsBasic{
         s.add('l');
         s.add('o');
 
-        System.out.println(reverseString(s));
+        reverseString(s);
     }
 }
