@@ -31,6 +31,10 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Count of odd numbers in Array
 
+## Basic Strings
+
+- Reverse a String II
+
 ## Basic Recursion
 
 - Print something N times
