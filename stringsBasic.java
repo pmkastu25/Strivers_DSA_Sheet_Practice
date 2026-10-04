@@ -1,3 +1,4 @@
+import java.math.BigInteger;
 import java.util.*;
 
 class stringsBasic{
@@ -23,6 +24,27 @@ class stringsBasic{
         
         return true;
     }
+
+    public static String largeOddNum(String s) {
+        int right = s.length() - 1;
+
+    while (right >= 0 && (s.charAt(right) - '0') % 2 == 0) {
+        right--;
+    }
+
+    if (right < 0) {
+        return "";
+    }
+
+    int left = 0;
+
+    while (left <= right && s.charAt(left) == '0') {
+        left++;
+    }
+
+    return s.substring(left, right + 1);
+
+    }
     public static void main(String[] args){
         List<Character> s = new ArrayList<>();
         s.add('h');
@@ -33,5 +55,7 @@ class stringsBasic{
 
         reverseString(s);
         System.out.println(palindromeCheck("hannah"));
+
+        System.out.println(largeOddNum("00023450000000000000001"));
     }
 }
