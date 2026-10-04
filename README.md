@@ -35,6 +35,10 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Reverse a String II
 
+- Palindrome Check
+
+- Largest Odd Number in a String
+
 ## Basic Recursion
 
 - Print something N times
