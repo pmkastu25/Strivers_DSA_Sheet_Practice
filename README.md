@@ -31,6 +31,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Count of odd numbers in Array
 
+- Divisors of a Number
+
 ## Basic Strings
 
 - Reverse a String II
