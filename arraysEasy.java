@@ -188,6 +188,19 @@ class arraysEasy{
             System.out.print(arr[i] + " ");
         }
     }
+
+    public static void divisors(int n) {
+        ArrayList<Integer> li = new ArrayList<>();
+
+        for(int i=1; i<=n; i++){
+            if(n % i == 0){
+                li.add(i);
+            }
+        }
+
+        System.out.println(li);
+    }
+
     public static void main(String[] args){
         int arr[] = {1,4,7,8};
         System.out.println(getSecondLargest(arr));
@@ -251,5 +264,7 @@ class arraysEasy{
         System.out.println(sum(ar, ar.length));
 
         System.out.println(countOdd(ar, ar.length));
+
+        divisors(6);
     }
 }
