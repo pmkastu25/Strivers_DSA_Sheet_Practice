@@ -69,6 +69,23 @@ class stringsBasic{
 
         return true;
     }
+    public static boolean rotateString(String s, String goal) {
+        //your code goes here
+        StringBuilder newSt = new StringBuilder(s);
+        int len = newSt.length()-1;
+        while(len-- >= 0){
+            char lastChar = newSt.toString().charAt(newSt.length()-1);
+            if(newSt.toString().equals(goal)){
+                return true;
+            }
+            newSt.deleteCharAt(newSt.length()-1);
+            newSt.insert(0, lastChar);
+        }
+
+        return false;
+
+    }
+
     public static void main(String[] args){
         List<Character> s = new ArrayList<>();
         s.add('h');
@@ -83,5 +100,7 @@ class stringsBasic{
         System.out.println(largeOddNum("00023450000000000000001"));
 
         System.out.println(anagramStrings("anagram", "nagaram"));
+
+        System.out.println(rotateString("abcde", "cdeab"));
     }
 }

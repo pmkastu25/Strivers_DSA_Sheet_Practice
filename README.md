@@ -41,6 +41,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Largest Odd Number in a String
 
+- Rotate String
+
 ## Basic Recursion
 
 - Print something N times
