@@ -63,6 +63,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 	
 - Fibonacci Number
 
+-  Sum of Digits in a Given Number
+
 ## Sorting - I
 
 - Bubble Sort

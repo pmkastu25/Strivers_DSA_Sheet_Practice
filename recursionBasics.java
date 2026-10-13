@@ -70,6 +70,31 @@ class recursionBasics{
         
         return  fib(n-1)+fib(n-2);
     }
+
+     public static int digSum(int num){
+        int sum = 0;
+        while(num != 0){
+            int ld = num % 10;
+            sum += ld;
+            num /= 10;
+        }
+
+        return sum;
+    }
+
+    public static int addDigits(int num) {
+        //your code goes here
+        if(num == 0){
+            return 0;
+        }
+
+        int n = digSum(num);
+        while(n >= 10){
+            n = digSum(n);
+        }
+
+        return n;
+    }
     public static void main(String[] args){
         System.out.println("\nPrinting numbers N to 1: ");
         printNumbers(10);
@@ -101,5 +126,7 @@ class recursionBasics{
         System.out.println(st1+ " is Palindrome or not?: "+ isPalindrome(st1, st1.length()-1, new StringBuilder("")));
 
         System.out.println("\nFibonacci of number is: "+ fib(5));
+
+        System.out.println("\nSum of Digits of a given number: "+ addDigits(529));
     }
 }
