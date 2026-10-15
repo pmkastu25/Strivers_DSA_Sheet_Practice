@@ -86,6 +86,23 @@ class stringsBasic{
 
     }
 
+    public static int maxDepth(String s) {
+        // Your code goes here
+        int depth = 0;
+        int maxDepth = 0;
+
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i) == '('){
+                depth++;
+                maxDepth = Math.max(depth, maxDepth);
+            } else if(s.charAt(i) == ')'){
+                depth--;
+            }
+        }
+
+        return maxDepth;
+    }
+
     public static void main(String[] args){
         List<Character> s = new ArrayList<>();
         s.add('h');
@@ -102,5 +119,7 @@ class stringsBasic{
         System.out.println(anagramStrings("anagram", "nagaram"));
 
         System.out.println(rotateString("abcde", "cdeab"));
+
+        System.out.println(maxDepth("(1+(2*3)+((8)/4))+1"));
     }
 }
