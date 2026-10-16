@@ -43,6 +43,10 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 - Rotate String
 
+# Paranthesis
+
+- Maximum Nesting Depth of the Parentheses
+
 ## Basic Recursion
 
 - Print something N times
