@@ -45,6 +45,8 @@ Solving Strivers DSA Sheet problems in JAVA daily to maintain consistency in DSA
 
 # Paranthesis
 
+- Remove Outermost Parentheses
+
 - Maximum Nesting Depth of the Parentheses
 
 ## Basic Recursion
