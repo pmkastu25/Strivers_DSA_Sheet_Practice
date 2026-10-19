@@ -103,6 +103,27 @@ class stringsBasic{
         return maxDepth;
     }
 
+    public static String removeOuterParenthesis(String s){
+        StringBuilder newSt = new StringBuilder("");
+        int count = 0;
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i) == '('){
+                if(count != 0){
+                    newSt.append(s.charAt(i));
+                }
+                count++;
+            } else {
+                count--;
+                if(count != 0){
+                    newSt.append(s.charAt(i));
+                }
+            }
+
+        }
+
+        return newSt.toString();
+    }
+
     public static void main(String[] args){
         List<Character> s = new ArrayList<>();
         s.add('h');
@@ -121,5 +142,7 @@ class stringsBasic{
         System.out.println(rotateString("abcde", "cdeab"));
 
         System.out.println(maxDepth("(1+(2*3)+((8)/4))+1"));
+
+        System.out.println(removeOuterParenthesis("()(()())(())"));
     }
 }
