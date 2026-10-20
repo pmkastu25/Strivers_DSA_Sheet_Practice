@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 class recursionBasics{
     public static void printNumbers(int num){
@@ -95,6 +96,39 @@ class recursionBasics{
 
         return n;
     }
+
+    public static void solve(ArrayList<Character> s, int idx, ArrayList<Character> res){
+        if(idx == 0){
+            res.add(s.get(idx));
+            return;
+        }
+
+        res.add(s.get(idx));
+        solve(s, idx-1, res);
+    }
+
+     public static ArrayList<Character> reverseString(ArrayList<Character> s) {
+        //your code goes here
+        // int left = 0;
+        // int right = s.size()-1;
+
+        // while(left < right){
+        //     char temp = s.get(left);
+        //     s.set(left, s.get(right));
+        //     s.set(right ,temp);
+
+        //     left++;
+        //     right--;
+        // }
+
+        // return s;
+        ArrayList<Character> res = new ArrayList<>();
+
+        solve(s, s.size()-1, res);
+
+        return res;
+    }
+
     public static void main(String[] args){
         System.out.println("\nPrinting numbers N to 1: ");
         printNumbers(10);
@@ -128,5 +162,13 @@ class recursionBasics{
         System.out.println("\nFibonacci of number is: "+ fib(5));
 
         System.out.println("\nSum of Digits of a given number: "+ addDigits(529));
+
+        ArrayList<Character> s = new ArrayList<>();
+        s.add('h');
+        s.add('e');
+        s.add('l');
+        s.add('l');
+        s.add('o');
+        System.out.println(reverseString(s));
     }
 }
