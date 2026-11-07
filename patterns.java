@@ -266,6 +266,26 @@ class patterns{
         }
     }
 
+    public static void NumberPattern(int n){
+        for(int i=1; i<=(2*n-1); i++){
+            //stars
+            int stars = (i > n ? 2*n-i: i);
+            for(int j=1; j<=stars; j++){
+                System.out.print("*");
+            }
+            //spaces
+            int spaces = (i > n ? (i-stars): (2*n-2*i));
+            for(int j=1; j<=spaces; j++){
+                System.out.print(" ");
+            }
+            //stars
+             for(int j=1; j<=stars; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -306,5 +326,7 @@ class patterns{
         CharacterTriangle2(5);
         System.out.println("--------------------------19. Hollow Rectangle--------------------------");
         hollowRectangle(5);
+        System.out.println("--------------------------20. Number Pattern--------------------------");
+        NumberPattern(5);
     }
 }
