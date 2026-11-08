@@ -231,6 +231,41 @@ class patterns{
         }
     }
 
+    public static void hollowRectangle(int n){
+        for(int i=0; i<n; i++){
+            //upper part
+            //left upper stars
+            for(int j=n-1; j>=i; j--){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=1; j<=(2*i); j++){
+                System.out.print(" ");
+            }
+            //right upper stars
+            for(int j=n-1; j>=i; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for(int i=1; i<=n; i++){
+            //lower part
+            //left lower stars
+            for(int j=0; j<i; j++){
+                System.out.print("*");
+            }
+            //spaces
+            for(int j=(2*n-2*i); j>=1; j--){
+                System.out.print(" ");
+            }
+            //right lower stars
+            for(int j=0; j<i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -269,5 +304,7 @@ class patterns{
         CharacterPyramid(5);
         System.out.println("--------------------------18. Character Triangle Type 3--------------------------");
         CharacterTriangle2(5);
+        System.out.println("--------------------------19. Hollow Rectangle--------------------------");
+        hollowRectangle(5);
     }
 }
