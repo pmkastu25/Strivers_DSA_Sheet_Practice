@@ -211,6 +211,26 @@ class patterns{
         }
     }
 
+    public static void CharacterTriangle2(int n){
+        // System.out.println(c);
+        for(int i=1; i<=n; i++){
+            int ch = (int)'A';
+            int lastAscii = ch+n-1;
+            int firstAscii = lastAscii - i;
+            for(int j=1; j<=i; j++){
+                if(i == 1){
+                    System.out.print((char)lastAscii);
+                    // System.out.print(lastAscii);
+                } else {
+                    // System.out.print(first);
+                    System.out.print((char)(firstAscii+1));
+                    firstAscii++;
+                }
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -247,5 +267,7 @@ class patterns{
         CharacterTriangle(5);
         System.out.println("--------------------------17. Character Pyramid--------------------------");
         CharacterPyramid(5);
+        System.out.println("--------------------------18. Character Triangle Type 3--------------------------");
+        CharacterTriangle2(5);
     }
 }
