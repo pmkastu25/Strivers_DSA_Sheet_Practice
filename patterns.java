@@ -185,6 +185,32 @@ class patterns{
         }
     }
 
+    public static void CharacterPyramid(int n){
+        for(int i=1; i<=n; i++){
+            //spaces
+            for(int j=1; j<=(n-i); j++){
+                System.out.print(" ");
+            }
+
+            //characters
+            char ch = 'A';
+            for(int j=1; j<=(2*i-1); j++){
+                System.out.print(ch);
+                if(j < i){
+                    ch++;
+                } else {
+                    ch--;
+                }
+            }
+
+            //spaces
+            for(int j=1; j<=(n-i); j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -219,5 +245,7 @@ class patterns{
         invertedRowCharacterTriangle(5);
         System.out.println("--------------------------16. Character Triangle Type 2--------------------------");
         CharacterTriangle(5);
+        System.out.println("--------------------------17. Character Pyramid--------------------------");
+        CharacterPyramid(5);
     }
 }
