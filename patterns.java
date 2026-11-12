@@ -163,6 +163,17 @@ class patterns{
         }
     }
 
+    public static void invertedRowCharacterTriangle(int n){
+        for(int i=n; i>=1; i--){
+            char ch = 'A';
+            for(int j=1; j<=i; j++){
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -193,5 +204,7 @@ class patterns{
         halfNumberTriangle(5);
         System.out.println("--------------------------14. Row Character Triangle--------------------------");
         RowCharacterTriangle(5);
+        System.out.println("--------------------------15. Inverted Row Character Triangle--------------------------");
+        invertedRowCharacterTriangle(5);
     }
 }
