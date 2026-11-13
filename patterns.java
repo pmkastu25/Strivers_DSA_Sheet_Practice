@@ -152,6 +152,17 @@ class patterns{
         }
     }
 
+    public static void RowCharacterTriangle(int n){
+        for(int i=1; i<=n; i++){
+            char ch = 'A';
+            for(int j=1; j<=i; j++){
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -180,5 +191,7 @@ class patterns{
         ConsecutiveNumberTriangle(4);
         System.out.println("--------------------------13. Half Number Triangle--------------------------");
         halfNumberTriangle(5);
+        System.out.println("--------------------------14. Row Character Triangle--------------------------");
+        RowCharacterTriangle(5);
     }
 }
