@@ -141,6 +141,17 @@ class patterns{
         }
     }
 
+    public static void halfNumberTriangle(int n){
+        int num = 1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(num+" ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -165,7 +176,9 @@ class patterns{
         BinaryTriangle(5);
         System.out.println("--------------------------11. NUMBER CROWN--------------------------");
         NumberCrown(5);
-        System.out.println("--------------------------12. COnsecutive Number Triangle--------------------------");
+        System.out.println("--------------------------12. Consecutive Number Triangle--------------------------");
         ConsecutiveNumberTriangle(4);
+        System.out.println("--------------------------13. Half Number Triangle--------------------------");
+        halfNumberTriangle(5);
     }
 }
