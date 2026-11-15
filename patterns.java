@@ -123,6 +123,24 @@ class patterns{
         }
     }
 
+    public static void ConsecutiveNumberTriangle(int n){
+        for(int i=1; i<=n; i++){
+            //Number
+            for(int j=1; j<=i; j++){
+                System.out.print(j);
+            }
+            //Spaces
+            for(int j=1; j<=(2*n-2*i); j++){
+                System.out.print(" ");
+            }
+             //Number
+            for(int j=i; j>=1; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -147,5 +165,7 @@ class patterns{
         BinaryTriangle(5);
         System.out.println("--------------------------11. NUMBER CROWN--------------------------");
         NumberCrown(5);
+        System.out.println("--------------------------12. COnsecutive Number Triangle--------------------------");
+        ConsecutiveNumberTriangle(4);
     }
 }
