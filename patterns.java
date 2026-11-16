@@ -111,6 +111,18 @@ class patterns{
         }
     }
 
+    public static void NumberCrown(int n){
+        for(int i=0; i<n; i++){
+            int start = (i % 2 == 0 ? 1: 0); //if even row start=1 else 0;
+
+            for(int j=0; j<=i; j++){
+                System.out.print(start); //print start first then toggle
+                start = 1 - start; //toggle start
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -133,5 +145,7 @@ class patterns{
         halfPyramidInverted2();
         System.out.println("--------------------------10. BINARY TRIANGLE--------------------------");
         BinaryTriangle(5);
+        System.out.println("--------------------------11. NUMBER CROWN--------------------------");
+        NumberCrown(5);
     }
 }
