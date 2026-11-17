@@ -112,26 +112,26 @@ class patterns{
     }
 
     public static void main(String[] args){
-        System.out.println("-----------------------------SQUARE------------------------------");
+        System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
-        System.out.println("--------------------------HALF PYRAMID--------------------------");
+        System.out.println("--------------------------2. HALF PYRAMID--------------------------");
         halfPyramid();
-        System.out.println("--------------------------Number HALF PYRAMID--------------------------");
+        System.out.println("--------------------------3. Number HALF PYRAMID--------------------------");
         halfPyramidNum();
-        System.out.println("--------------------------Number HALF PYRAMID Variation--------------------------");
+        System.out.println("--------------------------4. Number HALF PYRAMID Variation--------------------------");
         halfPyramidNum1();
-        System.out.println("--------------------------inverted HALF PYRAMID--------------------------");
+        System.out.println("--------------------------5. inverted HALF PYRAMID--------------------------");
         invertedHalfPyramid();
-        System.out.println("--------------------------inverted HALF PYRAMID variation--------------------------");
+        System.out.println("--------------------------6. inverted HALF PYRAMID variation--------------------------");
         invertedHalfPyramid1();
-        System.out.println("--------------------------HALF PYRAMID 2--------------------------");
+        System.out.println("--------------------------7. HALF PYRAMID 2--------------------------");
         halfPyramid2();
-        System.out.println("--------------------------HALF PYRAMID INVERTED 2--------------------------");
+        System.out.println("--------------------------8. HALF PYRAMID INVERTED 2--------------------------");
         halfPyramidInverted2();
-        System.out.println("--------------------------FULL PYRAMID--------------------------");
+        System.out.println("--------------------------9. FULL PYRAMID--------------------------");
         halfPyramid2();
         halfPyramidInverted2();
-        System.out.println("--------------------------BINARY TRIANGLE--------------------------");
+        System.out.println("--------------------------10. BINARY TRIANGLE--------------------------");
         BinaryTriangle(5);
     }
 }
