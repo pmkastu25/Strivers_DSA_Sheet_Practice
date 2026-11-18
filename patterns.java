@@ -101,6 +101,15 @@ class patterns{
             }
     }
     
+    public static void BinaryTriangle(int n){
+        for(int i=0; i<=2*n-1; i++){
+            int stars = (i > n ? 2*n-i : i);
+            for(int j=1; j<=stars; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
     public static void main(String[] args){
         System.out.println("-----------------------------SQUARE------------------------------");
@@ -122,5 +131,7 @@ class patterns{
         System.out.println("--------------------------FULL PYRAMID--------------------------");
         halfPyramid2();
         halfPyramidInverted2();
+        System.out.println("--------------------------BINARY TRIANGLE--------------------------");
+        BinaryTriangle(5);
     }
 }
