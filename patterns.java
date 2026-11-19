@@ -299,6 +299,20 @@ class patterns{
         }
     }
 
+    public static void NumPat(int n){
+        for(int i=0; i<(2*n-1); i++){
+            for(int j=0; j<(2*n-1); j++){
+                int top = i;
+                int left = j;
+                int right = (2*n-2)-j;
+                int down = (2*n-2)-i;
+
+                System.out.print(n-(Math.min(Math.min(top, down), Math.min(left, right))));
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("-----------------------------1. SQUARE------------------------------");
         square();
@@ -343,5 +357,7 @@ class patterns{
         NumberPattern(5);
         System.out.println("--------------------------21. Hollow Square--------------------------");
         HollowSquare(4);
+        System.out.println("--------------------------22. Number Pattern(Tricky)--------------------------");
+        NumPat(4);
     }
 }
