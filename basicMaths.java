@@ -44,10 +44,9 @@ public class basicMaths {
     public static boolean isArmstrongNumber(int num){
         int orgNum = num;
         int armNum = 0;
-        int numDigits = countDigitsofNum(num);
         while(num != 0){
             int ld = num % 10;
-            int newNum = (int)Math.pow(ld, numDigits);
+            int newNum = (int)Math.pow(ld, 3);
             armNum += newNum;
             num /= 10;
         }
