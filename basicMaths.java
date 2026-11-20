@@ -7,8 +7,11 @@ public class basicMaths {
             count++;
             num /= 10;
         }
-
         return count;
+    }
+
+    public static int countDigitsofNumByLog(int num){
+       return (int)Math.log10(num) + 1;
     }
 
     public static int reverseNumber(int num){
@@ -171,6 +174,8 @@ public class basicMaths {
     public static void main(String[] args){
         System.out.println("------------------------BASIC MATHS-----------------------------");
         System.out.println("Count the Digits of the Number: "+countDigitsofNum(125467));
+
+        System.out.println("Count the Digits of the Number By Log Method: "+countDigitsofNumByLog(125467));
 
         System.out.println("Reverse of a Number: "+reverseNumber(125467));
 
