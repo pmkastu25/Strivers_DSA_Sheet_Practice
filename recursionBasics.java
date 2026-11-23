@@ -31,7 +31,7 @@ class recursionBasics{
             return;
         }
         printNumbers1toNusingBacktrack(idx-1, num);
-        System.out.print(idx + " "); //print after call to backtrack
+        System.out.print(idx + " "); //print after call to backtrack ...//similar logic to print from N to 1
     }
 
     public static void printSumOfFirstN(int idx, int num, int sum){
