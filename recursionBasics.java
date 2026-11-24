@@ -26,6 +26,14 @@ class recursionBasics{
         printNumbers1toN(idx+1, num);
     }
 
+     public static void printNumbers1toNusingBacktrack(int idx, int num){
+        if(idx < 1){
+            return;
+        }
+        printNumbers1toNusingBacktrack(idx-1, num);
+        System.out.print(idx + " "); //print after call to backtrack
+    }
+
     public static void printSumOfFirstN(int idx, int num, int sum){
         if(idx == num){
             sum += idx;
@@ -140,6 +148,10 @@ class recursionBasics{
         System.out.println("\nPrinting numbers 1 to N: ");
 
         printNumbers1toN(1, 6);
+
+        System.out.println("\nPrinting numbers 1 to N using Backtracking: ");
+
+        printNumbers1toNusingBacktrack(6, 6);
 
         System.out.println();
 
